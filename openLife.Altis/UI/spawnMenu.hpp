@@ -22,6 +22,7 @@ class open_spawnSelect {
 			w = 0.190781 * safezoneW;
 			h = 0.836 * safezoneH;
 			sizeEx = 0.041;
+			onLBSelChanged = "[lbCurSel 1500] call open_fnc_spawnSelectionChange";
 		};
 		class RscButtonMenu_2400: open_RscButtonMenu
 		{

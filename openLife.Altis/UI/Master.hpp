@@ -4,3 +4,4 @@
 #include "common.hpp"
 #include "interact.hpp"
 #include "spawnMenu.hpp"
+#include "clothingStore.hpp"

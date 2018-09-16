@@ -33,5 +33,6 @@ class open_life_core {
 		class spawnSelect {};
 		class spawnPointcfg {};
 		class spawnSelected {};
+		class spawnSelectionChange {};
 	}
 };

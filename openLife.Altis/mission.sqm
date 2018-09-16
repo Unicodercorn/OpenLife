@@ -8,22 +8,22 @@ class EditorData
 	toggles=513;
 	class ItemIDProvider
 	{
-		nextID=321;
+		nextID=332;
 	};
 	class MarkerIDProvider
 	{
-		nextID=18;
+		nextID=22;
 	};
 	class LayerIndexProvider
 	{
-		nextID=3;
+		nextID=4;
 	};
 	class Camera
 	{
-		pos[]={3268.0845,23.238739,12934.432};
-		dir[]={-0.0092369867,-0.6531679,0.75715947};
-		up[]={-0.0079676993,0.75721157,0.65312082};
-		aside[]={0.99992782,-1.6592821e-008,0.012198706};
+		pos[]={19098.662,40.050053,21574.268};
+		dir[]={-0.79483789,-0.17814715,-0.58023542};
+		up[]={-0.14389378,0.98399907,-0.10504348};
+		aside[]={-0.58966821,-1.6185222e-006,0.80775982};
 	};
 };
 binarizationWanted=0;
@@ -374,7 +374,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=119;
+		items=128;
 		class Item0
 		{
 			dataType="Group";
@@ -7104,7 +7104,7 @@ class Mission
 		{
 			dataType="Marker";
 			position[]={3645.8401,10.197,13114.642};
-			name="kavala";
+			name="civ_spawn_1";
 			type="Empty";
 			id=319;
 			atlOffset=-8.392334e-005;
@@ -7195,6 +7195,92 @@ class Mission
 			{
 			};
 			id=174;
+		};
+		class Item119
+		{
+			dataType="Marker";
+			position[]={3736.7749,18.827,12992.18};
+			name="kav_hospital";
+			text="Hospital";
+			type="loc_Hospital";
+			colorName="ColorRed";
+			id=321;
+			atlOffset=-0.00028038025;
+		};
+		class Item120
+		{
+			dataType="Marker";
+			position[]={16562.662,11,12780.178};
+			name="PD_pyrgos";
+			text="Police Station";
+			type="b_hq";
+			id=322;
+		};
+		class Item121
+		{
+			dataType="Marker";
+			position[]={25695.189,17.604,21237.42};
+			name="PD_sofia";
+			text="Police Station";
+			type="b_hq";
+			id=323;
+			atlOffset=0.0001335144;
+		};
+		class Item122
+		{
+			dataType="Marker";
+			position[]={13849.197,19.780001,18597.301};
+			name="PD_athera";
+			text="Police Station";
+			type="b_hq";
+			id=324;
+		};
+		class Item123
+		{
+			dataType="Marker";
+			position[]={16821.492,22.556715,12712.586};
+			name="civ_spawn_2";
+			type="Empty";
+			id=326;
+			atlOffset=-8.392334e-005;
+		};
+		class Item124
+		{
+			dataType="Marker";
+			position[]={14038.7,26.408192,18730.389};
+			name="civ_spawn_3";
+			type="Empty";
+			id=327;
+			atlOffset=-8.392334e-005;
+		};
+		class Item125
+		{
+			dataType="Marker";
+			position[]={25697.607,20.341326,21349.137};
+			name="civ_spawn_4";
+			type="Empty";
+			id=328;
+			atlOffset=-8.392334e-005;
+		};
+		class Item126
+		{
+			dataType="Marker";
+			position[]={14181.284,19.534,16286.078};
+			name="police_air";
+			text="Police Air HQ";
+			type="b_air";
+			id=329;
+			atlOffset=0.00047874451;
+		};
+		class Item127
+		{
+			dataType="Marker";
+			position[]={14262.592,1.488,13073.597};
+			name="police_sea";
+			text="Coast Guard";
+			type="b_naval";
+			id=330;
+			atlOffset=0.00045967102;
 		};
 	};
 };
