@@ -23,8 +23,8 @@ class CfgVehicles {
 		trunk = 25;
 		textures[] = {
 			//Name, Texture, Conditions
-			{"Red","Red","true"},
-			{"Blue","Blue","true"}
+			{"Red","#(rgb,8,8,3)color(1,0,0,1)","true"},
+			{"Blue","#(rgb,8,8,3)color(0,0,1,1)","true"}
 		};
 	};
 	

@@ -12,15 +12,24 @@ _data = _ctrlLB lbData _selected;
 
 private _vehCfg = missionConfigFile >> "CfgVehicles" >> _data;
 
-_vehName = getText(configfile >> "CfgVehicles" >> _data >> "displayName");
-_vehPrice = getNumber(_vehCfg >> "price");
+_ctrlPicture ctrlSetText getText(configfile >> "CfgVehicles" >> _data >> "Icon");
 
 _ctrlDesc ctrlSetStructuredText parseText format["
-	Vehicle Name: %1<br />
-	Price: $%2
+	Price: $%1 <br />
+	Top Speed: %2 km/h<br />
+	Seats: %3 <br />
+	Horse Power: %4 bhp<br />
+	Fuel Capacity: %5 l <br />
+	Cargo Capacity: %6 kg<br />
+	Trunk Capacity: %7 <br />
 	",
-	_vehName,
-	_vehPrice
+	getNumber(_vehCfg >> "price"),
+	getNumber(configfile >> "CfgVehicles" >> _data >> "maxSpeed"),
+	getNumber(configfile >> "CfgVehicles" >> _data >> "transportSoldier"),
+	getNumber(configfile >> "CfgVehicles" >> _data >> "enginePower"),
+	getNumber(configfile >> "CfgVehicles" >> _data >> "fuelCapacity"),
+	getNumber(configfile >> "CfgVehicles" >> _data >> "maxSpeed"),
+	getNumber(missionConfigFile >> "CfgVehicles" >> _data >> "trunk")
 ];
 
 

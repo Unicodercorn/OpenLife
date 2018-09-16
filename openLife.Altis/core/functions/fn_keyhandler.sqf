@@ -43,6 +43,11 @@ switch (_key) do {
 	// Y
     case 21: { hint "Y-Menu"};
 	
+	// U
+    case 22: {
+		[_curObject] call open_fnc_unlockCar;
+	};
+	
 	//H 
 	case 35: {
 		if (_shift) then {

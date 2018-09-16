@@ -13,6 +13,7 @@ class open_life_core {
 	class actions {
 		file = "core\actions";
 		class pickLock {};
+		class unlockCar {};
 		class impoundVehicle {};
 		class crushVehicle {};
 	};

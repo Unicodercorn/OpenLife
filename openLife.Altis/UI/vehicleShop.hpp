@@ -40,7 +40,7 @@ class open_vehicleStore {
 		class open_RscButtonMenu_2400: open_RscButtonMenu
 		{
 			idc = 2400;
-
+			onButtonClick = "[0,lbCurSel 1500,lbCurSel 2100] call open_fnc_vehShopBuy";
 			text = "BUY"; //--- ToDo: Localize;
 			x = 0.304062 * safezoneW + safezoneX;
 			y = 0.72 * safezoneH + safezoneY;
@@ -52,7 +52,7 @@ class open_vehicleStore {
 		class open_RscButtonMenu_2401: open_RscButtonMenu
 		{
 			idc = 2401;
-
+			onButtonClick = "[1,lbCurSel 1500,lbCurSel 2100] call open_fnc_vehShopBuy";
 			text = "RENT"; //--- ToDo: Localize;
 			x = 0.37625 * safezoneW + safezoneX;
 			y = 0.72 * safezoneH + safezoneY;
@@ -74,14 +74,15 @@ class open_vehicleStore {
 			colorText[] = {1,1,1,1};
 			colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.3843])","(profilenamespace getvariable ['GUI_BCG_RGB_G',0.7019])","(profilenamespace getvariable ['GUI_BCG_RGB_B',0.8862])","1"};
 		};
-		class open_RscStructuredText_1100: open_RscStructuredText
+		class open_RscStructuredText_1100: open_RscPicture
 		{
 			idc = 1100;
 
-			x = 0.489687 * safezoneW + safezoneX;
+			x = 0.536094 * safezoneW + safezoneX;
 			y = 0.247 * safezoneH + safezoneY;
-			w = 0.175313 * safezoneW;
-			h = 0.187 * safezoneH;
+			w = 0.0979687 * safezoneW;
+			h = 0.198 * safezoneH;
+			text = "";
 		};
 		class open_RscStructuredText_1101: open_RscStructuredText
 		{
@@ -91,13 +92,14 @@ class open_vehicleStore {
 			y = 0.445 * safezoneH + safezoneY;
 			w = 0.242344 * safezoneW;
 			h = 0.253 * safezoneH;
+			
 		};
 		class open_RscCombo_2100: open_RscCombo
 		{
 			idc = 2100;
 
 			x = 0.304062 * safezoneW + safezoneX;
-			y = 0.676 * safezoneH + safezoneY;
+			y = 0.654 * safezoneH + safezoneY;
 			w = 0.134062 * safezoneW;
 			h = 0.022 * safezoneH;
 		};
@@ -111,7 +113,16 @@ class open_vehicleStore {
 			h = 0.572 * safezoneH;
 			colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.3843])","(profilenamespace getvariable ['GUI_BCG_RGB_G',0.7019])","(profilenamespace getvariable ['GUI_BCG_RGB_B',0.8862])","1"};
 		};
-
+		
+		class RscEdit_1400: open_RscEdit
+		{
+			idc = 1400;
+			text = ""; //--- ToDo: Localize;
+			x = 0.304062 * safezoneW + safezoneX;
+			y = 0.687 * safezoneH + safezoneY;
+			w = 0.134062 * safezoneW;
+			h = 0.022 * safezoneH;
+		};
 
 	};
 };

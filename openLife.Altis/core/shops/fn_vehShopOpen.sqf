@@ -1,13 +1,15 @@
 
 params ["_target", "_caller", "_actionId", "_arguments"];
 
-_shop = _arguments;
+_shop = _arguments select 0;
+
+_spawn = _arguments select 1;
 
 createDialog "open_vehicleStore";
 
 _ctrlLB = ((findDisplay 24601) displayCtrl 1500);
 
-//open_vehSpawnloc = _spawnLoc;
+open_vehSpawnloc = _spawn;
 
 private _return = [];
 

@@ -8,11 +8,11 @@ class EditorData
 	toggles=513;
 	class ItemIDProvider
 	{
-		nextID=334;
+		nextID=337;
 	};
 	class MarkerIDProvider
 	{
-		nextID=22;
+		nextID=23;
 	};
 	class LayerIndexProvider
 	{
@@ -20,7 +20,7 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={3255.5774,19.591087,12938.739};
+		pos[]={3241.9592,10.820015,12945.891};
 		dir[]={-0.10952098,-0.57990766,0.80728704};
 		up[]={-0.077958956,0.8146823,0.57464367};
 		aside[]={0.99092275,-2.8312206e-007,0.13443379};
@@ -374,7 +374,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=128;
+		items=130;
 		class Item0
 		{
 			dataType="Group";
@@ -7039,23 +7039,6 @@ class Mission
 		};
 		class Item116
 		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={3255.7053,3.8997333,12956.701};
-				angles[]={6.2815294,0,0.015242815};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-			};
-			id=320;
-			type="C_SUV_01_F";
-			atlOffset=0.174932;
-		};
-		class Item117
-		{
 			dataType="Marker";
 			position[]={3736.7749,18.827,12992.18};
 			name="kav_hospital";
@@ -7065,7 +7048,7 @@ class Mission
 			id=321;
 			atlOffset=-0.00028038025;
 		};
-		class Item118
+		class Item117
 		{
 			dataType="Marker";
 			position[]={16562.662,11,12780.178};
@@ -7074,7 +7057,7 @@ class Mission
 			type="b_hq";
 			id=322;
 		};
-		class Item119
+		class Item118
 		{
 			dataType="Marker";
 			position[]={25695.189,17.604,21237.42};
@@ -7084,7 +7067,7 @@ class Mission
 			id=323;
 			atlOffset=0.0001335144;
 		};
-		class Item120
+		class Item119
 		{
 			dataType="Marker";
 			position[]={13849.197,19.780001,18597.301};
@@ -7093,7 +7076,7 @@ class Mission
 			type="b_hq";
 			id=324;
 		};
-		class Item121
+		class Item120
 		{
 			dataType="Marker";
 			position[]={16821.492,22.556715,12712.586};
@@ -7102,7 +7085,7 @@ class Mission
 			id=326;
 			atlOffset=-8.392334e-005;
 		};
-		class Item122
+		class Item121
 		{
 			dataType="Marker";
 			position[]={14038.7,26.408192,18730.389};
@@ -7111,7 +7094,7 @@ class Mission
 			id=327;
 			atlOffset=-8.392334e-005;
 		};
-		class Item123
+		class Item122
 		{
 			dataType="Marker";
 			position[]={25697.607,20.341326,21349.137};
@@ -7120,7 +7103,7 @@ class Mission
 			id=328;
 			atlOffset=-8.392334e-005;
 		};
-		class Item124
+		class Item123
 		{
 			dataType="Marker";
 			position[]={14181.284,19.534,16286.078};
@@ -7130,7 +7113,7 @@ class Mission
 			id=329;
 			atlOffset=0.00047874451;
 		};
-		class Item125
+		class Item124
 		{
 			dataType="Marker";
 			position[]={14262.592,1.488,13073.597};
@@ -7140,7 +7123,7 @@ class Mission
 			id=330;
 			atlOffset=0.00045967102;
 		};
-		class Item126
+		class Item125
 		{
 			dataType="Object";
 			class PositionInfo
@@ -7152,7 +7135,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="this addaction [""<t color='#3941dd'>Police</t>- Vehicle Shop"",open_fnc_vehShopOpen,""police_car"",0,false,false,"""",""playerside == west"",5];";
+				init="this addaction [""<t color='#3941dd'>Police</t>- Vehicle Shop"",open_fnc_vehShopOpen,[""police_car"",""police_car_k""],0,false,false,"""",""playerside == west"",5];";
 				disableSimulation=1;
 			};
 			id=332;
@@ -7181,7 +7164,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item127
+		class Item126
 		{
 			dataType="Object";
 			class PositionInfo
@@ -7221,6 +7204,43 @@ class Mission
 				};
 				nAttributes=1;
 			};
+		};
+		class Item127
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={3228.0676,3.8637846,12956.25};
+				angles[]={6.2751846,3.0943358,6.272521};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=334;
+			type="C_SUV_01_F";
+			atlOffset=-0.00010442734;
+		};
+		class Item128
+		{
+			dataType="Marker";
+			position[]={3234.7429,2.1700001,12954.39};
+			name="police_car_k";
+			type="Empty";
+			angle=176.8;
+			id=335;
+			atlOffset=-4.7683716e-006;
+		};
+		class Item129
+		{
+			dataType="Marker";
+			position[]={3238.2056,2.1473744,12954.218};
+			name="police_car_k_1";
+			type="Empty";
+			angle=176.8;
+			id=336;
+			atlOffset=-4.7683716e-006;
 		};
 	};
 };

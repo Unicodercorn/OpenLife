@@ -9,3 +9,5 @@ open_progress_complete = false;
 waitUntil {open_progress_complete};
 
 hint "You now have Keys to the vehicle";
+
+open_vehicles pushback _target;
