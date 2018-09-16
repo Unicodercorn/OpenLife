@@ -1,0 +1,8 @@
+
+#include "CfgRemoteExec.hpp"
+#include "UI\Master.hpp"
+#include "config\configMaster.hpp"
+
+class CfgFunctions {
+    #include "Functions.hpp"
+};
