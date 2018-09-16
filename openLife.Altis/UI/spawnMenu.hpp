@@ -33,6 +33,8 @@ class open_spawnSelect {
 			w = 0.180469 * safezoneW;
 			h = 0.055 * safezoneH;
 			onButtonCLick = "[lbCurSel 1500] call open_fnc_spawnSelected;"
+			colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.3843])", "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.7019])", "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.8862])", "(profilenamespace getvariable ['GUI_BCG_RGB_A',0.7])"};
+            
 		};
 		class RscPicture_1200: open_RscMapControl
 		{

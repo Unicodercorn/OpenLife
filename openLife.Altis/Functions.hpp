@@ -10,16 +10,30 @@ class open_life_core {
 		class initMedic {};
 		class isMedic {};
 	};
+	class actions {
+		file = "core\actions";
+		class pickLock {};
+		class impoundVehicle {};
+		class crushVehicle {};
+	};
+	class config {
+		file = "config";
+		class playerSkins {};		
+	};
 	
 	class shops {
 		file = "core\shops";
 		class clothingShop {};
+		class vehShopOpen {};
+		class vehShopChange {};
+		class vehShopBuy {};
 	};
 	
 	class functions {
 		file = "core\functions";
 		class keyhandler {};
 		class WindowsKeyhandler {};
+		class progressTimer {};
 	};
 	
 	class pmenu {

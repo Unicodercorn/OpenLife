@@ -21,6 +21,9 @@ switch (_key) do {
 	//ESC
     //case 1: { hint "Escape Key" };
 	
+	case 2: { player setvariable ["WeaponAway",nil];};
+	case 3: { player setvariable ["WeaponAway",nil];};
+	
 	// T
     case 20: {
 		if (_shift) then {
@@ -39,6 +42,16 @@ switch (_key) do {
 	
 	// Y
     case 21: { hint "Y-Menu"};
+	
+	//H 
+	case 35: {
+		if (_shift) then {
+			player action ["SWITCHWEAPON",player,player,-1];
+			player setvariable ["WeaponAway",true];
+		};
+	};
+	
+	case 209: {createDialog "RscDisplayDebugPublic";};
 	
 	// Interact
     case _interactionKey: {[] call open_fnc_windowsKeyHandler};

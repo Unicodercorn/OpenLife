@@ -5,3 +5,4 @@
 #include "interact.hpp"
 #include "spawnMenu.hpp"
 #include "clothingStore.hpp"
+#include "vehicleShop.hpp"

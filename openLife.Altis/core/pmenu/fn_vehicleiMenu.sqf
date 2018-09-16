@@ -5,7 +5,7 @@ Desctiption:
 Player Interaction Menu
 */
 
-
+open_target = _this select 0;
 
 #define Btn1 2400
 #define Btn2 2401
@@ -48,10 +48,10 @@ _buttons = [_Btn1,_Btn2,_Btn3,_Btn4,_Btn5,_Btn6,_Btn7,_Btn8];
 } foreach _buttons;
 
 _Btn1 ctrlSetText "Repair";
-_Btn1 buttonSetAction "[life_pInact_curTarget] call life_fnc_unrestrain; closeDialog 0;";
+_Btn1 buttonSetAction "[open_target] call life_fnc_unrestrain; closeDialog 0;";
 
 _Btn2 ctrlSetText "Unflip";
-_Btn2 buttonSetAction "[life_pInact_curTarget] call life_fnc_unrestrain; closeDialog 0;";
+_Btn2 buttonSetAction "[open_target] call life_fnc_unrestrain; closeDialog 0;";
 
 if ([] call open_fnc_isCiv) then {
 	_Btn3 ctrlSetText "Close";
@@ -70,27 +70,31 @@ if ([] call open_fnc_isCiv) then {
 };
 
 if ([] call open_fnc_isPolice) then {
-	_Btn3 ctrlSetText "Pull Out";
-	_Btn3 buttonSetAction "[life_pInact_curTarget] call life_fnc_unrestrain; closeDialog 0;";
 	
-	_Btn4 ctrlSetText "Search";
+	_Btn3 ctrlSetText "Pick Lock";
+	_Btn3 buttonSetAction "[open_target] spawn open_fnc_picklock; closeDialog 0;";
+	
+	
+	_Btn4 ctrlSetText "Pull Out";
 	_Btn4 buttonSetAction "[life_pInact_curTarget] call life_fnc_unrestrain; closeDialog 0;";
-
-	_Btn5 ctrlSetText "Impound";
+	
+	_Btn5 ctrlSetText "Search";
 	_Btn5 buttonSetAction "[life_pInact_curTarget] call life_fnc_unrestrain; closeDialog 0;";
-	
-	_Btn6 ctrlSetText "Crush";
-	_Btn6 buttonSetAction "[life_pInact_curTarget] call life_fnc_unrestrain; closeDialog 0;";
 
-	_Btn7 ctrlSetText "Close";
-	_Btn7 buttonSetAction "closeDialog 0;";
+	_Btn6 ctrlSetText "Impound";
+	_Btn6 buttonSetAction "[open_target] spawn open_fnc_impoundVehicle; closeDialog 0;";
 	
-	_Btn8 ctrlShow false;
+	_Btn7 ctrlSetText "Crush";
+	_Btn7 buttonSetAction "[open_target] spawn open_fnc_crushVehicle; closeDialog 0;";
+
+	_Btn8 ctrlSetText "Close";
+	_Btn9 buttonSetAction "closeDialog 0;";
+	
 	_Btn9 ctrlShow false;
 	_Btn10 ctrlShow false;
 	_Btn11 ctrlShow false;
 	_Btn12 ctrlShow false;
-	_buttons = [_Btn1,_Btn2,_Btn3,_Btn4,_Btn5,_Btn6,_Btn7];
+	_buttons = [_Btn1,_Btn2,_Btn3,_Btn4,_Btn5,_Btn6,_Btn7,_Btn8];
 
 };
 

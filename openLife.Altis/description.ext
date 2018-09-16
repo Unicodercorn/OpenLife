@@ -6,3 +6,7 @@
 class CfgFunctions {
     #include "Functions.hpp"
 };
+
+class rscTitles {
+	 #include "UI\progress.hpp"
+};

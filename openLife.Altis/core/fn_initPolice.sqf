@@ -9,3 +9,5 @@ _loadout = [[],[],["hgun_Pistol_heavy_01_F","muzzle_snds_acp","acc_flashlight_pi
 
 player setunitloadout _loadout;
 
+[] call open_fnc_playerSkins;
+

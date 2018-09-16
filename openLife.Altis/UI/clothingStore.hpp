@@ -50,6 +50,7 @@ class open_clothingStore {
 			y = 0.72 * safezoneH + safezoneY;
 			w = 0.0567187 * safezoneW;
 			h = 0.033 * safezoneH;
+			onButtonClick = "closeDialog 2";
 		};
 		class open_RscCombo_2100: open_RscCombo
 		{

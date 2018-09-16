@@ -6,3 +6,4 @@ class open_settings {
 };
 
 #include "config_spawnpoints.hpp"
+#include "config_vehicles.hpp"
