@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=6;
+		nextID=7;
 	};
 	class Camera
 	{
-		pos[]={3241.9592,10.820015,12945.891};
-		dir[]={-0.10952098,-0.57990766,0.80728704};
-		up[]={-0.077958956,0.8146823,0.57464367};
-		aside[]={0.99092275,-2.8312206e-007,0.13443379};
+		pos[]={3261.6602,4.5901771,12960.669};
+		dir[]={0.74973679,-0.33900028,0.56832546};
+		up[]={0.27015746,0.94078201,0.20478795};
+		aside[]={0.60409343,-5.1851384e-007,-0.79692066};
 	};
 };
 binarizationWanted=0;
@@ -3457,7 +3457,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="this addaction [""<t color='#3941dd'>Police</t>- Clothing Shop"","""","""",0,false,false,"""",""playerside == west"",5];" \n "this addaction [""<t color='#3941dd'>Police</t>- Weapons Shop"","""","""",0,false,false,"""",""playerside == west"",5];" \n "this addaction [""<t color='#3941dd'>Police</t>- Market Shop"","""","""",0,false,false,"""",""playerside == west"",5];";
+				init="this addaction [""<t color='#3941dd'>Police</t>- Clothing Shop"",open_fnc_clothingShop,""police"",0,false,false,"""",""playerside == west"",5];" \n "this addaction [""<t color='#3941dd'>Police</t>- Weapons Shop"",open_fnc_weaponShop,""police_patrol"",0,false,false,"""",""playerside == west"",5];" \n "this addaction [""<t color='#3941dd'>Police</t>- Market Shop"",open_fnc_itemShop,""police"",0,false,false,"""",""playerside == west"",5];";
 				disableSimulation=1;
 			};
 			id=173;

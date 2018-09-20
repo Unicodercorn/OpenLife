@@ -3,6 +3,31 @@
 #include "UI\Master.hpp"
 #include "config\configMaster.hpp"
 
+author = "JJ Abrams";
+onLoadName = "Open Life";
+joinUnassigned = 1;
+saving = 0;
+
+respawn = 3;
+respawnDelay = 30;
+respawnDialog = 0;
+respawnButton = 0;
+respawnTemplates[] = {};
+
+disabledAI = 1;
+disableChannels[] = {
+  {0, true, true}, // Global
+  {1, false, true}, // Side
+  {2, true, true} // Command
+};
+enableDebugConsole = 1;
+allowFunctionsLog = 0;
+
+corpseManagerMode = 0;
+wreckManagerMode = 0;
+
+onPauseScript[]	= { open_fnc_onPause};	
+
 class CfgFunctions {
     #include "Functions.hpp"
 };

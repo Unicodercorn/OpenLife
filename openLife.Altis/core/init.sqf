@@ -3,7 +3,7 @@
 
 */
 
-open_vehicles = [];
+[] call open_fnc_getPlayerData;
 
 waitUntil {!(isNull (findDisplay 46))};
 (findDisplay 46) displayAddEventHandler ["KeyDown", "_this call open_fnc_keyHandler"];

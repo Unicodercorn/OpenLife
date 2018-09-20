@@ -25,9 +25,12 @@ class open_life_core {
 	class shops {
 		file = "core\shops";
 		class clothingShop {};
+		class itemShop {};
+		class licenseShop {};
 		class vehShopOpen {};
 		class vehShopChange {};
 		class vehShopBuy {};
+		class weaponShop {};
 	};
 	
 	class functions {
@@ -35,6 +38,7 @@ class open_life_core {
 		class keyhandler {};
 		class WindowsKeyhandler {};
 		class progressTimer {};
+		class onPause {};
 	};
 	
 	class pmenu {
@@ -50,4 +54,9 @@ class open_life_core {
 		class spawnSelected {};
 		class spawnSelectionChange {};
 	}
+	
+	class database {
+		file = "core\database"
+		class getPlayerData {};
+	};
 };
