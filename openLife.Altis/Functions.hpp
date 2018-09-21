@@ -39,6 +39,7 @@ class open_life_core {
 		class WindowsKeyhandler {};
 		class progressTimer {};
 		class onPause {};
+		class storeVehicle {};
 	};
 	
 	class pmenu {

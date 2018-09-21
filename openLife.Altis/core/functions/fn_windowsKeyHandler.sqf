@@ -13,7 +13,7 @@ if (_curObject iskindof "man") exitwith {
 	[_curObject] spawn open_fnc_policeIMenu;
 };
 
-if (_curObject iskindof "Car") exitwith {
+if (_curObject iskindof "Car" || _curObject iskindof "Air" ) exitwith {
 	//hint format["Windows Key on %1",name _curObject];
 	[_curObject] spawn open_fnc_vehicleIMenu;
 };

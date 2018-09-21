@@ -8,7 +8,7 @@ class EditorData
 	toggles=513;
 	class ItemIDProvider
 	{
-		nextID=337;
+		nextID=339;
 	};
 	class MarkerIDProvider
 	{
@@ -20,10 +20,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={3261.6602,4.5901771,12960.669};
-		dir[]={0.74973679,-0.33900028,0.56832546};
-		up[]={0.27015746,0.94078201,0.20478795};
-		aside[]={0.60409343,-5.1851384e-007,-0.79692066};
+		pos[]={3733.2568,27.929178,12998.993};
+		dir[]={0.21217889,-0.32059205,-0.92315334};
+		up[]={0.071813673,0.9472146,-0.3124494};
+		aside[]={-0.97459406,1.0947406e-007,-0.22400172};
 	};
 };
 binarizationWanted=0;
@@ -374,7 +374,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=130;
+		items=132;
 		class Item0
 		{
 			dataType="Group";
@@ -7135,7 +7135,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="this addaction [""<t color='#3941dd'>Police</t>- Vehicle Shop"",open_fnc_vehShopOpen,[""police_car"",""police_car_k""],0,false,false,"""",""playerside == west"",5];";
+				init="this addaction [""<t color='#3941dd'>Police</t>- Vehicle Shop"",open_fnc_vehShopOpen,[""police_car"",""police_car_k""],0,false,false,"""",""playerside == west"",5];" \n "" \n "this addaction [""Store Vehicle "",open_fnc_storeVehicle,"""",0,false,false,"""",""playerside == west"",5];";
 				disableSimulation=1;
 			};
 			id=332;
@@ -7176,7 +7176,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="this addaction [""<t color='#3941dd'>Police</t>- Helicopter Shop"","""","""",0,false,false,"""",""playerside == west"",5];";
+				init="this addaction [""<t color='#3941dd'>Police</t>- Helicopter Shop"",open_fnc_vehShopOpen,[""police_air"",""police_air_k""],0,false,false,"""",""playerside == west"",5];" \n "" \n "this addaction [""Store Vehicle "",open_fnc_storeVehicle,"""",0,false,false,"""",""playerside == west"",5];";
 				disableSimulation=1;
 			};
 			id=333;
@@ -7241,6 +7241,57 @@ class Mission
 			angle=176.8;
 			id=336;
 			atlOffset=-4.7683716e-006;
+		};
+		class Item130
+		{
+			dataType="Marker";
+			position[]={3188.0879,2,12904.68};
+			name="police_air_k";
+			type="Empty";
+			angle=176.8;
+			id=337;
+		};
+		class Item131
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={3736.9963,19.59115,12978.831};
+				angles[]={0,3.1271412,6.2826962};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="this addaction [""<t color='#3941dd'>Medic</t>- Clothing Shop"",open_fnc_clothingShop,""police"",0,false,false,"""",""playerside == GUER"",5];" \n "this addaction [""<t color='#3941dd'>Medic</t>- Weapons Shop"",open_fnc_weaponShop,""police_patrol"",0,false,false,"""",""playerside == GUER"",5];" \n "this addaction [""<t color='#3941dd'>Medic</t>- Market Shop"",open_fnc_itemShop,""police"",0,false,false,"""",""playerside == GUER"",5];" \n "" \n "this addaction [""<t color='#3941dd'>Medic</t>- Helicopter Shop"",open_fnc_vehShopOpen,[""medic_air"",""kav_hospital""],0,false,false,"""",""playerside == GUER"",5];" \n "" \n "this addaction [""<t color='#3941dd'>Medic</t>- Helicopter Shop"",open_fnc_vehShopOpen,[""medic_air"",""kav_hospital""],0,false,false,"""",""playerside == GUER"",5];" \n "" \n "this addaction [""Store Vehicle "",open_fnc_storeVehicle,"""",0,false,false,"""",""playerside == GUER"",5];";
+				disableSimulation=1;
+			};
+			id=338;
+			type="Land_InfoStand_V2_F";
+			atlOffset=0.00042152405;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
 		};
 	};
 };

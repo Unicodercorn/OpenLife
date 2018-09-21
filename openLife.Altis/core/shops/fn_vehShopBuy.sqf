@@ -21,7 +21,9 @@ open_vehicles pushback _veh;
 
 //systemchat _vehicleText;
 
-_veh setobjecttextureglobal [0,_vehicleText];
+if (_vehicleText != "") then {
+	_veh setobjecttextureglobal [0,_vehicleText];
+};
 
 closedialog 2;
 
